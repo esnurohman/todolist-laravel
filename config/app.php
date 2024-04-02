@@ -1,5 +1,7 @@
 <?php
 
+use App\Providers\TodolistServiceProvider;
+use App\Providers\UserServiceProvider;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -194,7 +196,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Providers\UserServiceProvider::class,
+        App\Providers\TodolistServiceProvider::class,
     ],
 
     /*
